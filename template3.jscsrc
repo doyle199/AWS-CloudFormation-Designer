@@ -1,0 +1,22 @@
+•	{
+    "Outputs": {
+      "URL": {
+        "Value": {
+          "Fn::Join": [
+            "",
+            [
+              "http://",
+              {
+                "Fn::GetAtt": [
+                  "WebServerInstance",
+                  "PublicIp"
+                ]
+              }
+            ]
+          ]
+        },
+        "Description": "Newly created application URL"
+      }
+    }
+  }
+  
